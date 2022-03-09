@@ -36,11 +36,22 @@ a {
 header {
     background-color: #999;
     height: 10%;
+    width: 100%;
+    margin: auto;
 }
 
+.headerwrap{width: 60%;margin: auto;}
+
+header .logo{width: 5%;float: left;margin: 2% 0 0 2%;}
+header .logo>img{width: 100%;}
+
+/* nav */
 
 nav {
     font-family: GmarketSansTTFLight;
     font-weight: 600;
-    font-size: 1.5vw;
+    font-size: 1vw;
 }
+
+nav .mainmenu {float: left;  text-align: center; width: 40%; margin: 4% 0 0 2%;}
+nav .mainmenu>li{ float: left; width: 25%;}
