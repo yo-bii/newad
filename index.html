@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Yo_bii</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style_main.css" type="text/css">
+    <link rel="stylesheet" href="css/fullpage.css" type="text/css">
+    <script src="script/jquery-1.12.3.js"></script>
+    <script src="script/fullpage.min.js"></script>
+    <script src="script/script.js"></script>
+
+</head>
+
+<body>
+    <div id="fp-nav" class="fp-right">
+        <ul>
+            <li><a href="#page1" class="active"><span class="fp-sr-only">fullPage</span><span></span></a>
+                <div class="fp-tooltip fp-right">fullPage</div>
+            </li>
+            <li><a href="#page2" class="active"><span class="fp-sr-only">Open</span><span></span></a>
+                <div class="fp-tooltip fp-right">Open</div>
+            </li>
+            <li><a href="#page3" class="active"><span class="fp-sr-only">Easy</span><span></span></a>
+                <div class="fp-tooltip fp-right">Easy</div>
+            </li>
+            <!--
+            <li><a href="#page4" class="active"><span class="fp-sr-only">Touch</span><span></span></a>
+                <div class="fp-tooltip fp-right">Touch</div>
+            </li>
+-->
+        </ul>
+    </div>
+    <!--막대-->
+    <header>
+        <nav>
+            <ul class="mainmenu">
+                <li>콘텐츠 제작 구독
+                    <ul class="submenu">
+                        <li>구독1</li>
+                        <li>구독2</li>
+                        <li>구독3</li>
+                    </ul>
+                </li>
+                <li>견적문의</li>
+                <li>광고 대행서비스</li>
+                <li>뉴애드</li>
+            </ul>
+        </nav>
+    </header>
+    <!--    header-->
+    <div id="fullpage">
+        <div class="page1 section">
+            <div>
+                <div></div>
+            </div>
+        </div>
+        <div class="page2 section">
+
+        </div>
+        <div class="page3 section">
+
+        </div>
+    </div>
+
+
+    <script>
+        new fullpage('#fullpage', {
+            navigation: true,
+            responsiveWidth: 700,
+            anchors: ['home', 'about-us', 'contact'],
+            parallax: true,
+            onLeave: function (origin, destination, direction) {
+                console.log("Leaving section" + origin.index);
+            },
+        });
+    </script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>

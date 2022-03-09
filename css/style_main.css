@@ -1,0 +1,46 @@
+/*set*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #2e2e2e;
+}
+
+@font-face {
+    font-family: 'GmarketSansTTFLight';
+    src: url(../font/GmarketSansTTFLight.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Roboto-Light';
+    src: url(../font/Roboto-Light.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/*header*/
+header {
+    background-color: #999;
+    height: 10%;
+}
+
+
+nav {
+    font-family: GmarketSansTTFLight;
+    font-weight: 600;
+    font-size: 1.5vw;
+}
